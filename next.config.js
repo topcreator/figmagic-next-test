@@ -3,7 +3,7 @@ const path = require('path');
 const withPlugins = require('next-compose-plugins');
 // const withOptimizedImages = require('next-optimized-images');
 
-const Dotenv = require('dotenv-webpack');
+// const Dotenv = require('dotenv-webpack');
 
 // next.js custom configuration goes here
 const nextConfig = {
@@ -13,10 +13,10 @@ const nextConfig = {
       ...config.plugins,
 
       // Read the .env file
-      new Dotenv({
-        path: path.join(__dirname, '.env'),
-        systemvars: true,
-      }),
+      // new Dotenv({
+      //   path: path.join(__dirname, '.env'),
+      //   systemvars: true,
+      // }),
     ];
 
     if (isServer) {
