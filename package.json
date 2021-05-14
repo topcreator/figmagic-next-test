@@ -1,0 +1,25 @@
+{
+  "name": "figmagic-next-test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "figmagic": "node ./node_modules/figmagic/build/index.js"
+  },
+  "dependencies": {
+    "@svgr/webpack": "^5.5.0",
+    "antd": "^3.24.2",
+    "dotenv-webpack": "^7.0.2",
+    "next": "10.2.0",
+    "next-compose-plugins": "^2.2.1",
+    "next-optimized-images": "^2.6.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "styled-components": "^5.3.0"
+  },
+  "devDependencies": {
+    "figmagic": "^4.1.0"
+  }
+}
