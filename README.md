@@ -13,6 +13,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## How to use tokens and graphics from Figmagic
 
+- change the paths for tokens, graphics and elements using .figmagicrc
 - use tokens with styled-components
 ```
 import colors from '@tokens/colors';
