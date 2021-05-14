@@ -1,34 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Installation
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
+- Run `yarn` inside of the repository to install all dependencies
+- Passing in API token and URL through the CLI, like this figmagic --token {TOKEN} --url {URL} (substitute curly braces for your actual values in .env)
+- Start the project by running `yarn dev` on local
+- To sync tokens, run `yarn figmagic:tokens`
+- To sync graphics, run `yarn figmagic:graphics`
+- To sync elements, run `yarn figmagic:elements`
+- To sync all of it, run `yarn figmagic:sync`
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## How to use tokens and graphics from Figmagic
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- use tokens with styled-components
+```
+import colors from '@tokens/colors';
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+...
+
+const SidebarStyled = styled(Sider)`
+  background-color: ${colors.sidebarBg};
+  .ant-menu {
+    background-color: ${colors.sidebarBg};
+  }
+`;
+
+...
+
+```
+- use graphics(svg icons) as resources
+```
+import YoutubeIcon from '@graphics/youtube1.svg';
+```
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about Next.js and Figmagic, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Figma developer site](https://www.figma.com/developers/docs) - learn about Figma and API.
+- [Figmaic Documentation](https://github.com/mikaelvesavuori/figmagic) - learn about Figmaic.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deploy on heroku
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Open [https://figmagic-next.herokuapp.com](https://figmagic-next.herokuapp.com) with your browser to see the result.

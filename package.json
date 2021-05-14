@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p $PORT",
-    "figmagic": "node ./node_modules/figmagic/build/index.js"
+    "figmagic": "node ./node_modules/figmagic/build/index.js",
+    "figmagic:tokens": "node ./node_modules/figmagic/build/index.js --syncTokens",
+    "figmagic:graphics": "node ./node_modules/figmagic/build/index.js --syncGraphics",
+    "figmagic:elements": "node ./node_modules/figmagic/build/index.js --syncElements",
+    "figmagic:sync": "node ./node_modules/figmagic/build/index.js --syncTokens --syncElements --syncGraphics"
   },
   "dependencies": {
     "@svgr/webpack": "^5.5.0",
