@@ -3,7 +3,7 @@ import { Layout} from 'antd';
 import colors from '@tokens/colors';
 import fontSizes from '@tokens/fontSizes';
 import fontFamilies from '@tokens/fontFamilies';
-// import spacing from '@tokens/spacing';
+import spacing from '@tokens/spacing';
 
 const { Sider } = Layout;
 
@@ -14,6 +14,8 @@ const SidebarStyled = styled(Sider)`
     font-family: ${fontFamilies.regular};
   }
   .ant-menu-item {
+    margin: ${spacing.small} 0 !important;
+    padding: 0 ${spacing.mediumSmall} !important;
     .anticon {
       font-size: ${fontSizes.size19} !important;
       svg path {
@@ -22,6 +24,15 @@ const SidebarStyled = styled(Sider)`
       svg g {
         fill: ${colors.grayscaleGrayLight};
         stroke: ${colors.grayscaleGrayLight};
+      }
+    }
+    &.ant-menu-item-selected, &:hover {
+      svg path {
+        fill: ${colors.grayscaleWhite};
+      }
+      svg g {
+        fill: ${colors.grayscaleWhite};
+        stroke: ${colors.grayscaleWhite};
       }
     }
   }
