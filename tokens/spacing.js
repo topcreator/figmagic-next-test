@@ -5,6 +5,7 @@ const spacing = {
  "large": "4rem",
  "big": "3rem",
  "medium": "2rem",
+ "mediumSmall": "1.5rem",
  "small": "1rem",
  "tiny": "0.5rem"
 }

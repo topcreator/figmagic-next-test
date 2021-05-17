@@ -13,6 +13,18 @@ const SidebarStyled = styled(Sider)`
     background-color: ${colors.sidebarBg};
     font-family: ${fontFamilies.regular};
   }
+  .ant-menu-item {
+    .anticon {
+      font-size: ${fontSizes.size19} !important;
+      svg path {
+        fill: ${colors.grayscaleGrayLight};
+      }
+      svg g {
+        fill: ${colors.grayscaleGrayLight};
+        stroke: ${colors.grayscaleGrayLight};
+      }
+    }
+  }
   .ant-menu-item-text {
     font-size: ${fontSizes.size16};
   }
