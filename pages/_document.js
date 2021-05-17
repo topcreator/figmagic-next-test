@@ -16,7 +16,7 @@ export default class MyDocument extends Document {
         <Head>
           <link rel="icon" type="image/x-icon" href="/static/image/favicon.ico" />
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/3.11.4/antd.min.css" />
-          <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" async />
+          <link href="https://fonts.googleapis.com/css?family=Mulish" rel="stylesheet" async />
         </Head>
         <body>
           <Main />
