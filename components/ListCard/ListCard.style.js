@@ -28,6 +28,11 @@ const ListCardStyled = styled.div`
       color: ${colors.grayscaleBlack};
       margin: ${spacing.small} 0;
     }
+    .category-label {
+      span {
+        border-bottom: 1px solid ${colors.grayscaleGray};
+      }
+    }
     .item-label, .item-value {
       font-size: ${fontSizes.size19};
       font-weight: ${fontWeights.bold};

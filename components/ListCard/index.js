@@ -9,7 +9,7 @@ export default function index() {
         <span>1962 to 2017</span>
       </div>
       <div className="list-card-content">
-        <span className="category-label">Audio Masters</span>
+        <span className="category-label"><span>Audio Masters</span></span>
         <span className="category-value">
           <span className="double-dot">:</span>
           <span>2761</span>
@@ -34,7 +34,7 @@ export default function index() {
           <span className="double-dot">:</span>
           <span>92</span>
         </span>
-        <span className="category-label">Video Masters</span>
+        <span className="category-label"><span>Video Masters</span></span>
         <span className="category-value">
           <span className="double-dot">:</span>
           <span>2761</span>
