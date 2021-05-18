@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import { Layout, Breadcrumb } from 'antd';
 import Sidebar from '@components/Sidebar';
+import CatalogBreakdown from '@components/ListCard';
 
 const { Header, Content, Footer } = Layout;
 
@@ -22,9 +23,9 @@ export default function Home() {
               <Breadcrumb.Item>User</Breadcrumb.Item>
               <Breadcrumb.Item>Bill</Breadcrumb.Item>
             </Breadcrumb>
-            <div style={{ padding: 24, background: '#fff', minHeight: 360 }}>Bill is a cat.</div>
+            <CatalogBreakdown />
           </Content>
-          <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+          <Footer style={{ textAlign: 'center' }}></Footer>
         </Layout>
       </Layout>
     </div>
