@@ -14,6 +14,8 @@ const SidebarStyled = styled(Sider)`
     font-family: ${fontFamilies.regular};
   }
   .ant-menu-item {
+    display: flex;
+    align-items: center;
     margin: ${spacing.small} 0 !important;
     padding: 0 ${spacing.mediumSmall} !important;
     .anticon {
