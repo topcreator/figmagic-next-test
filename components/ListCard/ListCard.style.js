@@ -26,7 +26,7 @@ const ListCardStyled = styled.div`
       font-size: ${fontSizes.size19};
       font-weight: ${fontWeights.bold};
       color: ${colors.grayscaleBlack};
-      margin: ${spacing.medium} 0;
+      margin: ${spacing.small} 0;
     }
     .item-label, .item-value {
       font-size: ${fontSizes.size19};
