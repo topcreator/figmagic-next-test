@@ -44,7 +44,7 @@ export default function Sidebar() {
             <span className="ant-menu-item-text">Rights Holders</span>
           </Menu.Item>
           <Menu.Item key="7">
-            <Icon component={LicensingPortal1} />
+            <Icon component={LicensingPortal1} className="has-stroke" />
             <span className="ant-menu-item-text">Licensing Portal</span>
           </Menu.Item>
         </Menu>

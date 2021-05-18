@@ -17,22 +17,24 @@ const SidebarStyled = styled(Sider)`
     margin: ${spacing.small} 0 !important;
     padding: 0 ${spacing.mediumSmall} !important;
     .anticon {
-      font-size: ${fontSizes.size19} !important;
+      font-size: ${fontSizes.size24} !important;
       svg path {
         fill: ${colors.grayscaleGrayLight};
       }
-      svg g {
-        fill: ${colors.grayscaleGrayLight};
-        stroke: ${colors.grayscaleGrayLight};
+      &.has-stroke {
+        svg path {
+          stroke: ${colors.grayscaleGrayLight};
+        }
       }
     }
     &.ant-menu-item-selected, &:hover {
       svg path {
         fill: ${colors.grayscaleWhite};
       }
-      svg g {
-        fill: ${colors.grayscaleWhite};
-        stroke: ${colors.grayscaleWhite};
+      &.has-stroke {
+        svg path {
+          stroke: ${colors.grayscaleWhite};
+        }
       }
     }
   }
